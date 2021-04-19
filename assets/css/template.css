@@ -1,0 +1,649 @@
+/*
+----------------------------------------------------------------
+Color : helper
+---------------------------------------------------------------- 
+    
+    color primary:     #565656;
+    color secondary:   #214493;
+
+    border color:      #e1e1e1;
+    heading color:     #565656;
+    text color:        #565656;
+    bg color:          #f5f5f5;
+    link color         #565656;
+    link color hover   #214493;
+
+    1 px = 0.75 point; 1 point = 1.333333 px
+*/
+
+/*
+----------------------------------------------------------------
+Template : 
+---------------------------------------------------------------- 
+*/
+    /* page */
+    @page {
+        margin: 5mm 0; /* Set margin on each page */
+        size: A4 portrait;
+
+        /* simulation of left column background on each page */
+        background: linear-gradient(to right, #f5f5f5 0%,#f5f5f5 32%,#ffffff 32%,#ffffff 100%);
+    }
+
+    html, body {
+        max-width:210mm;
+        /*height:100%; !* Optional, but it can't hurt. *!*/
+    }
+
+    .page {
+        justify-content: flex-end;
+        widows: 2;
+    }
+
+    /* column size */
+    .column-left {
+        width: 50%;
+        background-color: #1e1e1e; /*#2d3038;*/
+        max-height: 100%; /*295mm*/
+        overflow: hidden;
+
+        color: #ece8e8;
+    }
+
+    .column-right {
+        width: 68%;
+    }
+
+    /* section */
+    .section {
+        padding: 5mm;
+        margin-bottom: 5mm;
+    }
+
+    /* section heading */
+    .section-heading {
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+
+    .enumeration-separated > span.enumeration:not(:last-child)::after {
+        display: inline-block;
+        content: ' / ';
+        margin-left: 2mm;
+        margin-right: 1mm;
+    }
+
+.enumeration-separated > span.enumeration-vertical:not(:last-child)::after {
+    display: inline-block;
+    content: ' | ';
+    margin-left: 2mm;
+    margin-right: 1mm;
+}
+
+    .digital-skill-no-group {
+        margin-bottom: 3mm;
+    }
+
+/*
+----------------------------------------------------------------
+Personal Information
+---------------------------------------------------------------- 
+*/
+    .personal-information {
+        padding: 5mm;
+        height: 296.8mm;
+    }
+
+    .personal-information a:link, .personal-information a:visited { color: #565656; }
+    .personal-information a:hover { color: #004494; }
+
+    /* picture */
+    .personal-picture {
+        overflow: hidden;
+        width: 55mm;
+        height: 55mm;
+        margin: 4mm auto;
+        border-radius: 100%;
+        border: 3mm solid #1d1814; /*#d6d1cb*/
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* personal heading */
+    .personal-heading {
+        text-align: center;
+    }
+
+    /* name : lastname and firstname*/
+    .personal-name {
+        font-size: 70;
+        margin-bottom: 0;
+    }
+
+    .personal-firstname {
+        display: inline-block;
+    }
+    .personal-lastname {
+        display: inline-block;
+        font-weight: 400;
+    }
+
+    /* occupation */
+    .personal-occupation {
+        margin-top: 6mm;
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    /* details */
+    .personal-details {
+        line-height: 1.5;
+    }
+
+    .personal-details-title {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    /* item */
+    .personal-details-list > li {
+        padding-left: 8mm;
+    }
+
+    .personal-details-list strong {
+        font-weight: 600;
+    }
+
+    /* icons */
+    .personal-details .icon {
+        position: relative;
+    }
+
+    .personal-details .icon::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 1mm;
+        width: 5mm;
+        height: 6mm;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .personal-profession {
+        font-weight: 400; 
+        font-size: xxx-large;
+    }
+    
+    .personal-description, .info {
+        height: 75mm;
+    }
+    
+    /* title */
+    .title {
+        margin: 4mm;
+        height: 55mm;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* languages */
+    .languages {
+        display: table;
+        margin: 4mm auto;
+
+    }
+
+    .language-item {
+        display: inline-block;
+        width: 25mm; 
+        text-align: center;
+    }
+
+    .english {
+        --percent1: -65%; 
+        --percent2: 0%;
+        margin-right: 4mm;
+    }
+
+    .italian {
+        --percent1: 300%; 
+        --percent2: 0%;
+        margin-left: 4mm;
+    }
+    
+    .language-item > span {
+        font-size: small;
+    }
+
+    .language-item > div {
+        font-weight: bold;
+        height: 25mm; 
+        width: 25mm; 
+        border-radius: 50%; 
+        border: 2mm transparent solid; 
+        
+        display: table-cell;
+        vertical-align: middle;
+        
+        background: linear-gradient(#1e1e1e,#1e1e1e) padding-box, 
+           radial-gradient(circle at var(--percent1) var(--percent2), #2e3131, 
+           #2e3131 60%, #ece8e8 60%, #ece8e8 100%) border-box;
+    }
+
+    /* education */
+    .education {
+        height: 80mm;
+    }
+
+    .education-item {
+        display: inline-block; 
+        margin: 7px 0; 
+    }
+
+    .education-item-years {
+        display: inline-block; 
+        font-size: x-large; 
+        vertical-align: middle;
+    }
+
+    .education-item-years > span {
+        font-weight: bold;
+    }
+
+    .education-item-info {
+        display: inline-block; 
+        vertical-align: middle; 
+        margin-left: 10px;
+    }
+
+    .education-item-info-title {
+        font-weight: bold;
+    }
+
+    .education-item-years, .education-item-icon {
+        display: inline-block;
+        width: 15mm;
+        text-align: center;
+    }
+
+    /* info-contact-list */
+    .info-item, .contact-item {
+        display: block; 
+        padding-top: 10px;
+    }
+
+    .info-item > div, .contact-item > div {
+        display: inline-block;
+    }
+
+    .info-item > .mt-1, .contact-item > .mt-1 {
+        vertical-align: middle;
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .info-item svg, .contact-item svg, .education-item svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* communication */
+    .communication {
+        height: 55mm;
+    }
+
+    /* table */
+    .table-row {
+        display: table; 
+        margin: 4mm auto;
+    }
+
+    .table-row > div {
+        margin: 1mm;
+        width: 80px;
+        text-align: center;
+    }
+
+    .table-row div {
+        display: inline-block; 
+    }
+    
+    .table-row svg, .table-row img {
+        height: 60px;
+        width: 60px;
+    }
+
+    /* skills */
+    .skills {
+        height: 165mm; 
+    }
+
+    .skills img {
+        margin: 2.5mm;
+        margin-top: 0;
+    }
+    
+    .personal-firstname, 
+    .personal-lastname, 
+    .personal-details-title, 
+    .paragraph-title {
+        color: #ddad4a;
+    }
+
+    .paragraph-title {
+        font-weight: 700;
+    }
+/*
+----------------------------------------------------------------
+Work Experience
+---------------------------------------------------------------- 
+*/
+    /* work item except for last child */
+    .work-item:not(:last-child)  {
+        margin-bottom: 6mm;
+    }
+
+    /* work date and location common properties  */
+    .work-date,
+    .work-location {
+        font-size: 11px;
+        color: #214493;
+    }
+    .work-date {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .work-location {
+        font-weight: 400;
+    }
+
+    /* work title */
+    .work-title {
+        margin-top: 2mm;
+        margin-bottom: 2mm;
+    }
+
+    /* work occupation and employer*/
+    .work-occupation,
+    .work-employer {
+        display: block;
+    }
+    .work-occupation {
+        margin-bottom: 1mm;
+    }
+    .work-employer {
+        display: block;
+        font-weight: 400;
+    }
+
+/*
+----------------------------------------------------------------
+Education and Training
+---------------------------------------------------------------- 
+*/
+    /* work item except for last child */
+    .training-item:not(:last-child)  {
+        margin-bottom: 6mm;
+    }
+
+    /* work date and location common properties  */
+    .training-date,
+    .training-location {
+        font-size: 11px;
+        color: #214493;
+    }
+    .training-date {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .training-location {
+        font-weight: 400;
+    }
+
+    /* training title */
+    .training-title {
+        margin-top: 2mm;
+        margin-bottom: 2mm;
+    }
+
+    /* training occupation and employer*/
+    .training-qualification,
+    .training-organisation {
+        display: block;
+    }
+    .training-qualification {
+        margin-bottom: 1mm;
+    }
+    .training-organisation {
+        display: block;
+        font-weight: 400;
+    }
+
+    .field-of-study {
+        margin-bottom: 1mm;
+    }
+
+    .field-of-study-title {
+        margin-top: 1mm;
+        margin-bottom: 0;
+    }
+
+    .field-of-study .enumeration {
+        margin-top: 2mm;
+        margin-bottom: 2mm;
+        font-size: 14px;
+        line-height: 1;
+        word-break: break-word;
+    }
+
+/*
+----------------------------------------------------------------
+Language skills
+---------------------------------------------------------------- 
+*/
+
+    .language-skills{
+        margin-bottom: 2mm
+    }
+    /* language native */
+    .language-list {
+        line-height: 1;
+        margin-top: 2mm;
+        margin-bottom: 2mm;
+    }
+
+    /* language native title */
+    .language-list .title {
+        display: inline-block;
+        margin-right: 1mm;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    /* language */
+    .language-list .language {
+        display: inline-block;
+        font-weight: 400;
+        margin-top: 1mm;
+        margin-bottom: 1mm;
+    }
+
+    .digital-skills-item:first-child {
+        margin-top: 6mm;
+    }
+
+    .digital-skills-item:last-child  {
+        margin-bottom: 2mm;
+    }
+
+    /* title and list of skill*/
+    .digital-skill-title-list {
+        margin-bottom: 1mm;
+    }
+
+/* language-others */
+    .language-others {
+        border-bottom: .1rem solid #e1e1e1;
+        font-size: 12px;
+    }
+
+    .language-others:not(:last-child) {
+        margin-bottom: 4mm;
+    }
+
+/*
+----------------------------------------------------------------
+Digital Skills
+---------------------------------------------------------------- 
+*/
+    /* list */
+    .digital-skills-list {
+        margin-bottom: 0;
+    }
+
+    /* item */
+    .digital-skills-item:not(:last-child) {
+        margin-bottom: 6mm;
+    }
+
+/*
+----------------------------------------------------------------
+Additional information
+---------------------------------------------------------------- 
+*/
+    /* row */
+    .additional-information .row {
+        margin-bottom: 8mm;
+    }
+
+/*  font family
+    ________________________________________________________________ */
+    .font-family-heavy {
+        font-weight: 700;
+    }
+    .font-family-regular {
+        font-weight: 400;
+    }
+
+/*  font size  
+    ________________________________________________________________ */
+    .font-size-1 { font-size: 23px; }
+    .font-size-2 { font-size: 22px; }
+    .font-size-3 { font-size: 15px; }
+    .font-size-4 { font-size: 13px; }
+    .font-size-5 { font-size: 10px; }
+    .font-size-6 { font-size: 8px; }
+
+/*  text style
+    ________________________________________________________________ */
+    .text-style-1 {
+        font-weight: 700;
+        font-size: 12px;
+        color: #214493;
+        text-transform: uppercase;
+    }
+
+/*  list style
+    ________________________________________________________________ */
+    .list-style-1 {
+        position: relative;
+        list-style: none;
+        margin-bottom: 0;
+        padding-left: 6mm;
+        border-left: 2px solid #ffffff00;
+    }
+
+    /* list item 1 */
+    .list-item-1 {
+        position: relative;
+    }
+
+        /* list item 1 */
+        .list-item-1::after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: -6mm;
+            width: 12px;
+            height: 12px;
+            margin-left: -7px;
+            border-radius: 100%;
+            background-color: #214493;
+        }
+
+        .list-item-align-middle-1::after {
+            left: 0;
+            top: 50%;
+            margin-top: -6px;
+        }
+
+    /* list */
+    .list-horiz-1 {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+        /* item */
+        .list-horiz-1 > li {
+            display: inline;
+            line-height: 1.1;
+            margin-top: 3mm;
+        }
+
+            .list-horiz-1 > li:not(:last-child)::after {
+                display: inline-block;
+                content: ' / ';
+                margin-left: 2mm;
+                margin-right: 2mm;
+            }
+
+/*
+----------------------------------------------------------------
+Driving Licences
+----------------------------------------------------------------
+*/
+.driving-licence-list{
+    padding-bottom: 1px;
+}
+
+.licence-label{
+    float: left;
+    font-weight: 700;
+}
+
+.licence-code{
+    float: left;
+    margin-left: 1mm;
+    min-width: 6%;
+}
+
+.licence-dates{
+    margin-left: 1mm;
+    float: left;
+}
+
+.row-driving-licence{
+    margin-bottom: 0.5em;
+    display: flex;
+}
+.row-driving-licence .list-item-1{
+    width: 100%;
+}
+
+/*
+----------------------------------------------------------------
+Additional Classes
+---------------------------------------------------------------- 
+*/
+/*  _____ link break _____ */
+.break-word {
+    word-break: break-word !important;
+    overflow-wrap: break-word;
+}
