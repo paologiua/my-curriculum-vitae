@@ -9,6 +9,11 @@
     display: inline-block; 
     height: 70px; 
     width: 70px;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .theme-button svg {
@@ -23,17 +28,17 @@
 }
 
 /* dark-theme */
-.dark-theme .column-right {
+.dark-theme {
     background-color: #1e1e1ef5;
 }
 
-.dark-theme .column-right, .dark-theme .personal-profession {
+.dark-theme, .dark-theme .personal-profession {
     color: #ece8e8;
     transition: background-color .2s ease-out, color .2s ease-out;
 }
 
 /* white-theme */
-.white-theme .column-right {
+.white-theme {
     transition: background-color .2s ease-out, color .2s ease-out;
 }
  
