@@ -43,11 +43,14 @@ Template :
     /* column size */
     .column-left {
         width: 50%;
-        background-color: #1e1e1e; /*#2d3038;*/
         max-height: 100%; /*295mm*/
         overflow: hidden;
 
         color: #ece8e8;
+    }
+
+    .left-section {
+        background-color: #1e1e1e; /*#2d3038;*/
     }
 
     .column-right {

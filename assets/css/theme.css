@@ -1,11 +1,11 @@
 /* button */
-.theme-button {
+.theme-buttons {
     margin-top: 60px; 
-    height: 50px; 
+    height: 70px; 
     text-align: center;
 }
 
-.theme-button div {
+.theme-buttons div {
     display: inline-block; 
     height: 70px; 
     width: 70px;
@@ -16,12 +16,12 @@
     user-select: none;
 }
 
-.theme-button svg {
+.theme-buttons svg {
     height: 50px;
     margin: 10px;
 }
 
-.theme-button div:hover {
+.theme-buttons div:hover {
     background-color: #444343;
     border-radius: 50%;
     transition: background-color .2s ease-out;
@@ -37,9 +37,20 @@
     transition: background-color .2s ease-out, color .2s ease-out;
 }
 
-/* white-theme */
-.white-theme {
+body {
     transition: background-color .2s ease-out, color .2s ease-out;
+}
+
+/* rounded-theme */
+.rounded .left-section {
+    -webkit-border-radius: 0 50px 50px 0;
+    -moz-border-radius: 0 50px 50px 0;
+    border-radius: 0 50px 50px 0;
+    transition: border-radius .2s ease-out;
+}
+
+body .left-section {
+    transition: border-radius .2s ease-out;
 }
  
 @media print {    
