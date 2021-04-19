@@ -9,3 +9,6 @@
 
 /* helper */
 @import "helper-classes.css";
+
+/* theme */
+@import "theme.css";

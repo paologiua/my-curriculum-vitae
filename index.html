@@ -152,6 +152,12 @@
 
                     </div>
                 </div>
+
+                <div class="theme-button no-print">
+                    <div onclick="lightAndDark()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="#ECE8E8" d="M12,8a1,1,0,0,0,0,2,2,2,0,0,1,0,4,1,1,0,0,0,0,2,4,4,0,0,0,0-8Zm9.71,3.29L19.36,9V5.64a1,1,0,0,0-1-1H15.05L12.71,2.29a1,1,0,0,0-1.42,0L9,4.64H5.64a1,1,0,0,0-1,1V9L2.29,11.29a1,1,0,0,0,0,1.42l2.35,2.34v3.31a1,1,0,0,0,1,1H9l2.34,2.35a1,1,0,0,0,1.42,0l2.34-2.35h3.31a1,1,0,0,0,1-1V15.05l2.35-2.34A1,1,0,0,0,21.71,11.29Zm-4.05,2.64a1,1,0,0,0-.3.71v2.72H14.64a1,1,0,0,0-.71.3L12,19.59l-1.93-1.93a1,1,0,0,0-.71-.3H6.64V14.64a1,1,0,0,0-.3-.71L4.41,12l1.93-1.93a1,1,0,0,0,.3-.71V6.64H9.36a1,1,0,0,0,.71-.3L12,4.41l1.93,1.93a1,1,0,0,0,.71.3h2.72V9.36a1,1,0,0,0,.3.71L19.59,12Z"/></svg>
+                    </div>
+                </div>
             </section>
             <section id="left-section" class="personal-information break-word">
                 <div class="section personal-details" style="height: 80mm;">
@@ -284,12 +290,9 @@
                     <h2 class="paragraph-title section-heading break-after">PRESENTAZIONE</h2>
 
                     <div class="additional-content mb-1">
-                        <p>La tecnologia mi ha sempre affascinato e questo mi rende sempre curioso e desideroso di apprendere
-                            nuove tecniche o di confrontarmi con gli altri. Penso che non ci sia niente di più bello del
-                            confronto reciproco. È un modo piacevole di lavorare in gruppo e contemporaneamente ampliare le
-                            proprie conoscenze. Negli ultimi anni ho potuto compiere preziose esperienze nello sviluppo di
-                            applicativi web e mobile. Non vedo l'ora di poter alimentare la mia passione per l'informatica
-                            all'interno di un ambiente professionale e di contribuire alla sua crescita.</p>
+                        <p>
+                            Sono uno sviluppatore software con la passione per la tecnologia e attratto dall'innovazione, in grado di comprendere le migliori soluzioni per la realizzazione di sistemi software. Durante gli studi e tramite lavori personali, ho potuto compiere preziose esperienze nello sviluppo di applicativi web e mobile, e nel campo dei sistemi distribuiti. Disponibile all'apprendimento di nuove tecniche e metodologie di sviluppo. Aperto ad eventuale smart working e lavori all'estero.
+                        </p>
                     </div>
                 </section>
                 
@@ -301,10 +304,11 @@
                         </h2>
 
                         <div class="additional-content">
-                            <p>Buone competenze comunicative&nbsp;durante lo sviluppo di progetti di gruppo basate su
-                                        aiuto reciproco, chiarezza e collaborazione. Sono sempre pronto ad accettare critiche di
-                                        qualsiasi tipo per migliorare il mio rendimento lavorativo e il mio percorso formativo.
-                                    </p>
+                            <p>
+                                Buone competenze comunicative durante lo sviluppo di
+                                progetti di gruppo basate su aiuto reciproco, chiarezza e
+                                collaborazione. Disponibile al confronto con gli altri e in grado di pianificare progetti sviluppati assecondando gli obiettivi finali e le esigenze del cliente.
+                            </p>
                         </div>
                     </div>
                 </section>
@@ -546,19 +550,16 @@
 
                         <div class="additional-content">
                             <ul>
-                                <li>Conoscenze di Web Design;</li>
-                                <li>Progettazione di Database in tutte le sue fasi fino al raggiungimento di un lavoro
-                                    finito e privo di ridondanze;</li>
-                                <li>Progettazione di applicazioni mobile tramite la piattaforma Android Studio. Prime
-                                    conoscenze di Flutter e Dart;</li>
-                                <li>Buona conoscenza di piattaforme di sviluppo e condivisione di applicazioni, siti web
-                                    e programmi;</li>
-                                <li>Ottima capacità di lavorare in team;</li>
-                                <li>Progettazione di calcolatori embedded (quali RaspberryPi e Arduino);</li>
-                                <li>Ottime competenze nell'uso del sistema operativo Windows e Linux e dei loro
-                                    applicativi;</li>
+                                <li>Conoscenze di programmazione Web e Web Design. Studi di UX e UI;</li>
+                                <li>Progettazione di un database in tutte le sue fasi, fino al raggiungimento di un lavoro
+                                    finito e privo di ridondanze. Capacità nella realizzazione di basi di dati con tecnologie quali MySQL e MongoDB;</li>
+                                <li>Progettazione di applicazioni mobile tramite le piattaforme Android Studio e Ionic. Studi preliminari di Flutter e del linguaggio Dart;</li>
+                                <li>Buona conoscenza di piattaforme di sviluppo e condivisione di applicativi come GitHub;</li>
+                                <li>Capacità di lavorare con JSP tramite SpringBoot;</li>
+                                <li>Comprensione del funzionamento dei moderni sistemi operativi e conoscenza delle problematiche relative alla loro realizzazione;</li>
                                 <li>Semplicità di comprensione e memorizzazione di linguaggi di programmazione;</li>
-                                <li>Capacità di lavorare con Inkscape;</li>
+                                <li>Abilità nella realizzazione di algoritmi complessi;</li>
+                                <li>Capacità di lavorare in vettoriale con Inkscape;</li>
                             </ul>
                         </div>
                     </div>
@@ -644,6 +645,14 @@
         </div>
     </div>
 
+    <script>
+        function lightAndDark() {
+            var $body = document.getElementsByTagName("body")[0];
+            
+            if($body.className === "dark-theme") $body.className = "white-theme";
+            else $body.className = "dark-theme";
+        }
+    </script>
 
 
 

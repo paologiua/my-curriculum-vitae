@@ -1,0 +1,49 @@
+/* button */
+.theme-button {
+    margin-top: 60px; 
+    height: 50px; 
+    text-align: center;
+}
+
+.theme-button div {
+    display: inline-block; 
+    height: 70px; 
+    width: 70px;
+}
+
+.theme-button svg {
+    height: 50px;
+    margin: 10px;
+}
+
+.theme-button div:hover {
+    background-color: #444343;
+    border-radius: 50%;
+    transition: background-color .2s ease-out;
+}
+
+/* dark-theme */
+.dark-theme .column-right {
+    background-color: #1e1e1ef5;
+}
+
+.dark-theme .column-right, .dark-theme .personal-profession {
+    color: #ece8e8;
+    transition: background-color .2s ease-out, color .2s ease-out;
+}
+
+.dark-theme .hobby path {
+    fill:#727171;
+}
+
+
+/* white-theme */
+.white-theme .column-right {
+    transition: background-color .2s ease-out, color .2s ease-out;
+}
+ 
+@media print {    
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
