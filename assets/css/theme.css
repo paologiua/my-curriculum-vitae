@@ -58,3 +58,12 @@ body .left-section {
         display: none !important;
     }
 }
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+body {
+    -webkit-print-color-adjust: exact !important;
+}
