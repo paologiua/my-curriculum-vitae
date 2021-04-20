@@ -29,7 +29,7 @@
 
 /* dark-theme */
 .dark-theme {
-    background-color: #1e1e1ef5;
+    background-color: #262626; /* #1e1e1ef5 */
 }
 
 .dark-theme, .dark-theme .personal-profession {
@@ -57,13 +57,4 @@ body .left-section {
     .no-print, .no-print * {
         display: none !important;
     }
-}
-
-@page {
-    size: A4;
-    margin: 0;
-}
-
-body {
-    -webkit-print-color-adjust: exact !important;
 }
