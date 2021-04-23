@@ -1,1 +1,1 @@
-# my-curriculum-vitae
+![alt text](curriculum.png)
