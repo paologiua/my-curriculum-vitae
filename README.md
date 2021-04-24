@@ -1,1 +1,1 @@
-![alt text](curriculum.png)
+![alt text](presentation/curriculum.svg)
