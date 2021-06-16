@@ -73,11 +73,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.24748737"
-     inkscape:cx="696.91232"
-     inkscape:cy="1259.3822"
+     inkscape:zoom="0.35"
+     inkscape:cx="466.94304"
+     inkscape:cy="1045.6336"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g913"
      inkscape:document-rotation="0"
      showgrid="false"
      height="630mm"
@@ -156,12 +156,11 @@
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.1611px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-         id="text5268"
-         transform="translate(0,-23.283342)"
-         x="832.28003"
-         y="450.5672"><tspan
-           id="tspan5266"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.1611px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.264583">vitae</tspan></text>
+         id="text5268"><textPath
+           xlink:href="#path925"
+           id="textPath927"><tspan
+             id="tspan5266"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.1611px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.264583">vitae</tspan></textPath></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.1611px;line-height:1.25;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#ffffff;stroke-width:0.264583"
@@ -172,14 +171,17 @@
            id="textPath5260"><tspan
              id="tspan5251"
              style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.1611px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';fill:#ffffff;stroke-width:0.264583">Curriculum</tspan></textPath></text>
+      <path
+         style="fill:none;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 832.28074,429.39968 c 0,0 46.42203,-7.0362 102.54864,22.36344"
+         id="path925" />
     </g>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Contenuto inferiore"
-     style="display:inline;opacity:1"
-     sodipodi:insensitive="true">
+     style="display:inline;opacity:1">
     <rect
        style="display:inline;fill:#1c1f24;stroke:none;stroke-width:9.8162;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter954)"
        id="rect867"
@@ -51275,8 +51277,7 @@ AMAQVOgUCwAAAAAAAACgo+P/AxscZpoITGzVAAAAAElFTkSuQmCC
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="livello 1"
-     style="display:none"
-     sodipodi:insensitive="true">
+     style="display:none">
     <path
        style="fill:none;stroke:#000000;stroke-width:0.371014px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0"
        d="m 711.03477,405.25151 c 145.75854,-51.65217 224.07652,2.58262 224.07652,2.58262"
