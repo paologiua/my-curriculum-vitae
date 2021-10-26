@@ -1,0 +1,24 @@
+{
+  "name": "my-curriculum-vitae",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paologiua/my-curriculum-vitae.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paologiua/my-curriculum-vitae/issues"
+  },
+  "homepage": "https://github.com/paologiua/my-curriculum-vitae#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "puppeteer": "^10.4.0"
+  }
+}
