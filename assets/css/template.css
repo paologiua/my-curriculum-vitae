@@ -15,6 +15,7 @@ Template :
     body {
         -webkit-print-color-adjust: exact !important;
         max-width: 210mm;
+        min-width: 209mm;
     }
 
     .page {

@@ -60,4 +60,8 @@ body .left-section {
     html {
         background-color: white;
     }
+
+    body {
+        zoom: normal !important;
+    }
 }
