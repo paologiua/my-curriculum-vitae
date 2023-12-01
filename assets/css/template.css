@@ -174,14 +174,12 @@ Personal Information
     }
 
     .english {
-        --percent1: -65%; 
-        --percent2: 0%;
+        --percent: 210deg; 
         margin-right: 4mm;
     }
 
     .italian {
-        --percent1: 300%; 
-        --percent2: 0%;
+        --percent: 360deg; 
         margin-left: 4mm;
     }
     
@@ -199,9 +197,8 @@ Personal Information
         display: table-cell;
         vertical-align: middle;
         
-        background: linear-gradient(#1e1e1e,#1e1e1e) padding-box, 
-           radial-gradient(circle at var(--percent1) var(--percent2), #2e3131, 
-           #2e3131 60%, #ece8e8 60%, #ece8e8 100%) border-box;
+        background: linear-gradient(#1e1e1e,#1e1e1e) padding-box,
+                    conic-gradient(#ece8e8 var(--percent), #2e3131 var(--percent)) border-box
     }
 
     /* education -- searches */
